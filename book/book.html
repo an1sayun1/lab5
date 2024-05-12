@@ -2,38 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Details</title>
 </head>
 <body>
     <script>
+        // JSON representation of the collection of books
+        const books = [
+            {
+                "title": "The Great Gatsby",
+                "author": "F. Scott Fitzgerald",
+                "publicationYear": 1925,
+                "genres": ["Fiction", "Classics"]
+            },
+            {
+                "title": "To Kill a Mockingbird",
+                "author": "Harper Lee",
+                "publicationYear": 1960,
+                "genres": ["Fiction", "Coming-of-Age"]
+            }
+        ];
 
-        const bookData = {
-                            "Book":
-                            [
-                                {
-                                "title":"The Great Gatsby",
-                                "author":"F. Scott Fitzgerald",
-                                "genres":["Fiction","Classics"]
-                                },
-                                {    
-                                "title":"To Kill a Mockingbird",
-                                "author":"Harper Lee",
-                                "genres":["Fiction","Coming-of-Age"]
-                                }
-                            ]
-                        };
-
-        console.log(bookData.Book[0].title);
-        console.log(bookData.Book[0].author);
-        console.log(bookData.Book[0].genres);
-
-        // Loop through the students and display the subjects
-        bookData.Book.forEach(book => {
-            console.log(book.genres);
-        });
-
+        // Display details in the browser console
+        console.log("Title of the first book: " + books[0].title);
+        console.log("Author of the second book: " + books[1].author);
+        console.log("Genres of all books: " + books.map(book => book.genres).flat().join(", "));
     </script>
 </body>
 </html>
