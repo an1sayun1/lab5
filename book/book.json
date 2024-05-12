@@ -13,7 +13,7 @@
             "title":"To Kill a Mockingbird",
             "author":"Harper Lee",
             "publication year":1960,
-            "subjects":["Fiction","Coming-of-Age"]
+            "genres":["Fiction","Coming-of-Age"]
 
         }
     ]
