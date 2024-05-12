@@ -7,7 +7,6 @@
 </head>
 <body>
     <script>
-        // JSON representation of the collection of books
         const books = [
             {
                 "title": "The Great Gatsby",
@@ -23,7 +22,6 @@
             }
         ];
 
-        // Display details in the browser console
         console.log("Title of the first book: " + books[0].title);
         console.log("Author of the second book: " + books[1].author);
         console.log("Genres of all books: " + books.map(book => book.genres).flat().join(", "));
