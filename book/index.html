@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>jQuery DOM Operations</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+ .myStyle {
+ background-color: coral;
+ padding: 16px;
+ }
+ </style>
+</head>
+<body>
+ <div id="myElement">Original Text</div>
+ <div id="myDIV">
+ <p>I am a myDIV.</p>
+ </div>
+ <button id="myButton">Click me</button>
+ <script>
+ $(document).ready(function(){
+     // a
+     $("#myElement").text("Modified Text");
+
+     // b
+     $("#myDIV").addClass("myStyle");
+
+     // c
+     $("#myButton").on("click", function() {
+         alert("Button clicked!");
+     });
+ });
+ </script>
+</body>
+</html>
